@@ -48,7 +48,7 @@ controlpage.onAlert=function(msg){
 			respond([0,cmdId,'jsInjected',success]);
 			break;
 		case 'addCookie':
-			phantom.addCookie(request[3]);
+			var success = phantom.addCookie(request[3]);
 			respond([0,cmdId,'cookieAdded',success]);
 			break;
 		case 'exit':
