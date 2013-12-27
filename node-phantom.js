@@ -175,7 +175,7 @@ module.exports={
 						case 'pageFileUploaded':
 						case 'pageSetViewportDone':
 						case 'pageEvaluatedAsync':
-							cmds[cmdId].cb(null);
+							cmds[cmdId].cb(null, response[3]);
 							delete cmds[cmdId];
 							break;
 						default:
